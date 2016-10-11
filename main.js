@@ -5,7 +5,7 @@
 // ----------------------------
 
 function forEach(array, callback) {
-  for (var count = 0; count > array.length; count++) {
+  for (var count = 0; count < array.length; count++) {
     var item = array[count];
     callback (item);
   };
@@ -22,24 +22,35 @@ console.assert(total === 24)
 // that takes an array and a function
 // ----------------------------
 
-function reduce(array, callback){
-    // YOUR CODE HERE
-}
+// function reduce(array, callback) {
+//         forEach(array, function () {
+//           var a = array[count]
+//           var b = array[count]-1
+//           return a + b;
+//         });
+//       };
+// // not sure what .reduce does in the first place yet
+
 
 // tests
 // ---
-console.assert(
-    reduce([1, 2, 3, 4], function(a, v){ return a*v }) === 24
-)
+// console.assert(
+//     reduce([1, 2, 3, 4], function(a, v){ return a*v }) === 24
+// )
 
 // ----------------------------
 // using forEach() from above, write your own map()
 // that takes an array and a function
 // ----------------------------
 
-function map(array, callback){
-    // YOUR CODE HERE
-}
+// function map(array, callback){
+//     var newArray = [];
+//     forEach (array, function (x) {
+//       var effect = callback(x);
+//       newArray.push(effect);
+//     });
+//     return newArray;
+// };
 
 // tests
 // ---
