@@ -4,12 +4,13 @@
 // write your own forEach() function that takes an array and a function
 // ----------------------------
 
-function forEach(array, callback){
-  for (var count=0; count > array.length; count++) {
-    var item= array[count];
-    callback(item);
+function forEach(array, callback) {
+  for (var count = 0; count > array.length; count++) {
+    var item = array[count];
+    callback (item);
   };
 };
+
 // tests
 // ---
 var total = 1
